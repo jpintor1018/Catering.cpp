@@ -21,6 +21,7 @@ double balance (double totaladults, double totalchild, double totaldessert, doub
 int main()
 
 {
+    
     int adults, child, dessert;
     
     double deposit,roomfee, Ameal=12.75, Dcost=1, tax=0.18,Totaladults, TotalChildren,Totaldessert, TotalFoodcosts, Totaltax, x;
@@ -58,40 +59,79 @@ int main()
     cout<<"Balance due:                         "<<x<<endl;
     return 0;
 }
+
+
 double total_adults (int adults, double Ameal)
+
 {
+
     double total;
+    
     total= adults*12.75;
+    
     return total;
+    
 }
+
 double total_children (int child)
+
+
 {
+
     double total;
+    
     total = child*12.75*.60;
+    
     return total;
+    
 }
+
 double total_dessert (int child, int adults)
+
 {
+
     double total;
+    
     total = child+adults;
+    
     return total;
+    
 }
+
 double total_foodcosts (double totaladults, double totalchild, double totaldessert)
+
 {
+
     double total;
+    
     total = totaladults+totalchild+totaldessert;
+    
     return total;
+    
 }
+
 double tax_tip (double totaladults, double totalchild, double totaldessert, double totaltax)
+
 {
+
     double total;
+   
     total= (totaladults+totalchild+totaldessert)*0.18;
+    
     return total;
+    
+   
 }
+
 double balance (double totaladults, double totalchild, double totaldessert, double roomfee, double totaltax, double deposit)
-{
+
+{   
     double total;
+   
     total=totaladults+totalchild+totaldessert+totaltax+roomfee-deposit;
+    
     return total;
+     
 }
+
 
