@@ -2,22 +2,29 @@
 
 
 
-
-
-
-
 #include <iostream>
+
 using namespace std;
+
 double total_adults (int adults, double Ameal);
+
 double total_children (int child);
+
 double total_dessert (int child, int adults);
+
 double total_foodcosts (double totaladults, double totalchild, double totaldessert);
+
 double tax_tip (double totaladults, double totalchild, double totaldessert, double tax);
+
 double balance (double totaladults, double totalchild, double totaldessert, double roomfee, double totaltax, double deposit);
+
 int main()
+
 {
     int adults, child, dessert;
+    
     double deposit,roomfee, Ameal=12.75, Dcost=1, tax=0.18,Totaladults, TotalChildren,Totaldessert, TotalFoodcosts, Totaltax, x;
+    
     cout<<"Enter number of adults\n";
     cin>>adults;
     cout<<"Enter number of children\n";
